@@ -1,0 +1,8 @@
+---
+- hosts: web
+  remote_user: root
+  tasks:
+    - name: demo
+      copy: 
+        src: /var/lib/jenkins/workspace/newDemo/demo.html
+        dest: /var/www/html/
